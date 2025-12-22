@@ -6,7 +6,7 @@ lab:
 
 # Explore the Voice Live API
 
-In this exercise you create an agent in the Azure AI Foundry and explore the Voice Live API in the Speech Playground. 
+In this exercise you create an agent in the Microsoft Foundry and explore the Azure Speech - Voice Live in the AI services. 
 
 This exercise takes approximately **30** minutes to complete.
 
@@ -14,20 +14,20 @@ This exercise takes approximately **30** minutes to complete.
 
 > <span style="color:red">**Note**:</span> This exercise is designed to be completed in a browser environment with direct access to your computer's microphone. While the concepts can be explored in Azure Cloud Shell, the interactive voice features require local audio hardware access.
 
-## Create an Azure AI Foundry project
+## Create a Foundry project
 
-Let's start by creating an Azure AI Foundry project.
+Let's start by creating a Foundry project.
 
 1. In a web browser, open the [Azure AI Foundry portal](https://ai.azure.com) at `https://ai.azure.com` and sign in using your Azure credentials. Close any tips or quick start panes that are opened the first time you sign in, and if necessary use the **Azure AI Foundry** logo at the top left to navigate to the home page, which looks similar to the following image (close the **Help** pane if it's open):
 
-    ![Screenshot of Azure AI Foundry home page with create an agent selected.](../media/ai-foundry-new-home-page.png)
+    ![Screenshot of Microsoft Foundry home page.](../media/microsoft-foundry-home.png)
 
-1. In the home page, select **Create an agent**.
+1. In the home page, toggle **New Foundry** **on**.
 
-1. In the **Create an agent** wizard, enter a valid name for your project. 
+1. On the pop up, select to create a **new project**, enter a valid name for your project. 
 
 1. Select **Advanced options** and specify the following settings:
-    - **Azure AI Foundry resource**: *Keep the default name*
+    - **Microsoft Foundry resource**: *Keep the default name*
     - **Subscription**: *Your Azure subscription*
     - **Resource group**: *Create or select a resource group*
     - **Region**: Randomly select a region from the following options:\*
@@ -40,31 +40,29 @@ Let's start by creating an Azure AI Foundry project.
 
     >**Note**: If you receive a permissions error, select the **Fix it** button to add the appropriate permissions to continue.
 
-1. When your project is created, you will be brought by default to the Agents playground in Azure AI Foundry portal, which should look similar to the following image:
+1. When your project is created, you will be brought by default to the recently created project Overview page on the **New Foundry**, which should look similar to the following image:
 
-    ![Screenshot of a Azure AI project details in Azure AI Foundry portal.](../media/ai-foundry-project-2.png)
+    ![Screenshot of a Azure AI project details in Azure AI Foundry portal.](../media/microsoft-foundry-project.png)
 
 ## Start a Voice Live sample
 
  In this section of the exercise you interact with one of the agents. 
 
-1. Select **Playgrounds** in the navigation pane.
+1. Select **Models** in the navigation pane.
 
-1. Locate the **Speech playground** group, and select the **Try the Speech playground** button.
+1. Locate the **AI Services** tab, and select the **Azure Speech - Voice Live** option, and go to **Playground** pane.
 
-1. The Speech Playground offers many pre-built options. Use the horizontal scroll bar to navigate to the end of the list and select the **Voice Live** tile. 
+    ![Screenshot of the Voice Live tile.](../media/foundry-azure-speech-voice-live.png)
 
-    ![Screenshot of the Voice Live tile.](../media/voice-live-tile.png)
+1. Select the **Casual chat** agent sample in the carousel bellow **Start with a sample**, and **Apply changes** to save the casual chat new configuration.
 
-1. Select the **Casual chat** agent sample in **Try with samples** panel.
-
-1. Ensure your microphone and speakers are working and select the **Start** button at the bottom of the page. 
+1. Ensure your microphone and speakers are working and select the **Start** button at the bottom of the page in the **Chat** pane. 
 
     As you interact with the agent, notice you can interrupt the agent and it will pause to listen. Try speaking with different lengths of pauses between words and sentences. Notice how quickly the agent recognizes the pauses and fills in the conversation. When you're finished select the **End** button.
 
 1. Start the other sample agents to explore how they behave.
 
-    As you explore the different agents note the changes in the  **Response instruction** section in the **Configuration** panel.
+    As you explore the different agents note the changes in the **Response instruction** section in the **Configuration** panel.
 
 ## Configure the agent 
 
