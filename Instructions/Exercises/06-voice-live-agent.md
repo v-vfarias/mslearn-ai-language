@@ -40,9 +40,9 @@ Microsoft Foundry uses projects to organize models, resources, data, and other a
     - **Foundry resource**: *Enter a valid name for your AI Foundry resource.*
     - **Subscription**: *Your Azure subscription*
     - **Resource group**: *Create or select a resource group*
-    - **Region**: Select any available region
+    - **Region**: Select any region that supports [Voice Live](https://learn.microsoft.com/azure/ai-services/speech-service/regions?tabs=voice-live) and [Foundry voice-based agents](https://learn.microsoft.com/azure/foundry/agents/concepts/limits-quotas-regions#supported-regions), other than **West US 3**, where model initialization issues have been reported. Verify that the region also supports the model used in this exercise.
 
-    > **Note**: Use a recommended Microsoft Foundry region. Model and feature availability may vary by region.
+    If you reuse an existing project, verify that its Foundry resource is in a supported region other than **West US 3**. Otherwise, create a new resource and project in a suitable region.
 
 1. Select **Create**. Wait for your project to be created. Then view its home page.
 
@@ -50,11 +50,12 @@ Microsoft Foundry uses projects to organize models, resources, data, and other a
 
 Now let's create an agent.
 
+1. Select **Models** in the side panel, search for **gpt-5**, and select **Custom deploy**. Set the deployment name to `voice-live-agent-model`, select model version **2025-08-07** and deployment type **Global Standard**, and deploy the model. Wait for deployment to complete.
 1. Now you're ready to **Start building**. Select **Create agents** (or on the **Build** page, select the **Agents** tab); and create a new agent named `chat-agent`.
 
      When ready, your agent opens in the agent playground.
 
-1. In the model drop-down list, ensure that a **gpt-5** model has been deployed and selected for your agent.
+1. In the model drop-down list, select the **voice-live-agent-model** deployment for your agent.
 1. Assign your agent the following **Instructions**:
 
     ```
