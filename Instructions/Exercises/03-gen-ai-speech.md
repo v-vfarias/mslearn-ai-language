@@ -53,7 +53,7 @@ Microsoft Foundry uses projects to organize models, resources, data, and other a
 
     If you reuse an existing project, verify that its Foundry resource is in **East US 2**. Otherwise, create a new resource and project in this region.
 
-    > **Important**: [Model availability](https://learn.microsoft.com/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure-region-availability) depends on the resource region, model version, and deployment type. This exercise uses `gpt-4o-mini-tts` and `gpt-4o-mini-transcribe`, version **2025-12-15**, with **Global Standard** deployments in **East US 2**. Deployment also depends on your subscription's quota and available capacity.
+    > **Important**: [Model availability](https://learn.microsoft.com/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure-region-availability) depends on the resource region, model version, and deployment type. This exercise uses `gpt-4o-mini-tts` and `gpt-4o-mini-transcribe` in **East US 2**. Deployment also depends on your subscription's quota and available capacity.
 
 1. Select **Create**. Wait for your project to be created. Then view its home page.
 
@@ -65,14 +65,14 @@ To develop speech-enabled apps, we're going to need speech-enabled models. Speci
 
 1. Now you're ready to **Start building**. Let's **Explore models** (or on the **Discover** page, select the **Models** tab) to view the Microsoft Foundry model catalog.
 1. In the model catalog, search for `gpt-4o-mini-tts`.
-1. Review the model card, and then deploy model version **2025-12-15** with deployment type **Global Standard** and deployment name `speech-generation-model`.
+1. Review the model card, and then deploy the model using the default settings.
 1. When the model has been deployed, view its details, noting that the **Endpoint** required to use it are available here (you'll need the Endpoint later).
 
 ### Deploy a speech-recognition model
 
 1. In the Foundry portal menu bar, select **Build**; and then view the **Deployments** page. Note that the text-to-speech model you deployed is listed.
 1. Select **Deploy a base model**, and search the catalog for `gpt-4o-mini-transcribe`.
-1. Deploy model version **2025-12-15** with deployment type **Global Standard** and deployment name `speech-recognition-model`.
+1. Deploy the model using the default settings.
 1. Return to the **Deployments** page and verify that both of the model you deployed are listed.
 1. Select each model to view its **Endpoint** and deployment name for use in your code.
 

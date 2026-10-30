@@ -58,12 +58,12 @@ Microsoft Foundry uses projects to organize models, resources, data, and other a
 
 Now that you have a Foundry project, you can create an agent.
 
-1. Select **Models** in the side panel, search for **gpt-5**, and select **Custom deploy**. Set the deployment name to `language-agent-model`, select model version **2025-08-07** and deployment type **Global Standard**, and deploy the model. Wait for deployment to complete.
+1. Select **Models** in the side panel, search for **gpt-5**, and deploy the model using the default settings. Wait for deployment to complete.
 1. Now you're ready to **Start building**. Select **Create agents** (or on the **Build** page, select the **Agents** tab); and create a new agent named `Text-Analysis-Agent`.
 
     When ready, your agent opens in the agent playground.
 
-1. In the model drop-down list, select the **language-agent-model** deployment for your agent.
+1. In the model drop-down list, select the **gpt-5** deployment you created for your agent.
 1. Assign your agent the following **Instructions**:
 
     ```
